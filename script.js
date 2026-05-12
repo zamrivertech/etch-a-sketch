@@ -2,7 +2,8 @@ const container = document.querySelector(".container");
 
 //try only with row
 
-const squares = 5;
+const squares = prompt("Grid number?", 16);
+
 
 for (let i = 0; i < squares; i++) {
 
@@ -21,6 +22,16 @@ for (let j = 0; j < squares; j++) {
     box.classList.add('box');
 
     row.appendChild(box);  
+
+    box.addEventListener('click', () => {
+        
+        box.style.backgroundColor = 'lime';
+
+        box.addEventListener('drag', () => {
+            box.style.backgroundColor = 'lime';
+        })
+
+    });
 
 
 } 

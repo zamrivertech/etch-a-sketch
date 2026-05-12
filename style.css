@@ -30,5 +30,5 @@ body {
 .box {
     flex-grow: 1;
     background-color: white;
-    border: .05px solid black;
+    border: .05px solid lightgrey;
 }
