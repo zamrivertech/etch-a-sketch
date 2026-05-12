@@ -6,14 +6,25 @@
     <title>Etch-a-Sketch</title>
     <style>
         .container {
-            background-color: blue;
-            height: 200px;
+            background-color: lightblue;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            padding: 1rem;
         }
 
         .square {
+            margin: 0;
             background-color: red;
-            height: 40px;
-            width: 40px;
+            height: 48px;
+            width: 48px;
+            border: 1px solid black;
+        }
+
+        .square:hover {
+            background-color: green;
         }
     </style>
 </head>
@@ -26,14 +37,21 @@
 
     const container = document.querySelector(".container");
 
+    let squares = prompt('Please put number of squares:', 16);
+
+    for (let i = 0; i < squares; i++) {
+
     const square = document.createElement('div');
 
     square.classList.add('square');
 
-    //create and assign classiwth id or name with numbrs
+    container.appendChild(square);
 
-    container.appendChild(square);
-    container.appendChild(square);
+        //oh this works
+
+    }
+
+
 
 </script>    
 </body>
