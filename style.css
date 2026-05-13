@@ -30,4 +30,5 @@ body {
     width: 42px;
     height: 100%;
     background-color: purple;
+    border: solid 2px white;
 }

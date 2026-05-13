@@ -1,13 +1,26 @@
 const container = document.querySelector('.container');
 
+let squares = 2;
+
+for (let i = 0; i < squares; i++) {
+
 const row = document.createElement('row');
 
 row.classList.add('row');
 
 container.appendChild(row);
 
-const box = document.createElement('box');
+    for (let j = 0; j < squares; j++) {
 
-box.classList.add('box');
+        const box = document.createElement('box');
 
-row.appendChild(box);
+        box.classList.add('box');
+
+        row.appendChild(box);
+
+    }
+
+
+}
+
+
