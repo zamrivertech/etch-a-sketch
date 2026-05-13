@@ -20,14 +20,14 @@ body {
 }
 
 .row {
-    height: 42px;
+    flex-grow: 1;;
     width: 100%;
     background-color: white;
     display: flex;
 }
 
 .box {
-    width: 42px;
+    flex-grow: 1;
     height: 100%;
     background-color: purple;
     border: solid 2px white;
