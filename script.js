@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 
-let squares = 8;
+let squares = 42;
 
 for (let i = 0; i < squares; i++) {
 
