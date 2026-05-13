@@ -2,12 +2,14 @@ const container = document.querySelector(".container");
 
 //try only with row
 
-const squares = prompt("Grid number?", 16);
+const squares = 16; //prompt("Grid number?", 16);
+
+let isDrawing = false;
 
 
 for (let i = 0; i < squares; i++) {
 
-const size = squares * 2 + 8;    
+const size = squares * 2 + 8;   
 
 const row = document.createElement("div");
 
@@ -23,15 +25,35 @@ for (let j = 0; j < squares; j++) {
 
     row.appendChild(box);  
 
-    box.addEventListener('click', () => {
-        
-        box.style.backgroundColor = 'lime';
+            box.addEventListener('mouseover', () => {
+                if (isDrawing) {
+                    box.style.backgroundColor = 'lime'
+            console.log("over")
+                }
+        });
 
-        box.addEventListener('drag', () => {
-            box.style.backgroundColor = 'lime';
-        })
+    box.addEventListener('mousedown', () => {
+
+        isDrawing = true;
+
+        console.log("down");
+
+    
+
 
     });
+
+    box.addEventListener('mouseup', () => {
+
+        isDrawing = false;
+
+                console.log("up");
+
+    });
+
+
+
+    
 
 
 } 
@@ -39,3 +61,4 @@ for (let j = 0; j < squares; j++) {
 
 
 }
+
