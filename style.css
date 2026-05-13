@@ -2,3 +2,9 @@
     padding: 0;
     margin: 0;
 }
+
+.container {
+    width: 600px;
+    height: 600px;
+    background-color: lightblue;
+}
