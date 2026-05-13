@@ -20,7 +20,7 @@ container.appendChild(row);
 
         row.appendChild(box);
 
-        box.addEventListener ('mouseover', () => {
+        box.addEventListener ('pointerover', () => {
 
             if (drawable) {
                 box.style.backgroundColor = 'black';
@@ -28,13 +28,13 @@ container.appendChild(row);
 
         });
 
-        box.addEventListener ('mousedown', () => {
+        box.addEventListener ('pointerdown', () => {
 
             drawable = true;
 
         });
 
-        box.addEventListener ('mouseup', () => {
+        box.addEventListener ('pointerup', () => {
 
             drawable = false;
 
