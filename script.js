@@ -2,6 +2,8 @@ const container = document.querySelector('.container');
 
 let squares = 42;
 
+let drawable = false;
+
 for (let i = 0; i < squares; i++) {
 
 const row = document.createElement('row');
@@ -17,6 +19,27 @@ container.appendChild(row);
         box.classList.add('box');
 
         row.appendChild(box);
+
+        box.addEventListener ('mouseover', () => {
+
+            if (drawable) {
+                box.style.backgroundColor = 'black';
+            }
+
+        });
+
+        box.addEventListener ('mousedown', () => {
+
+            drawable = true;
+
+        });
+
+        box.addEventListener ('mouseup', () => {
+
+            drawable = false;
+
+        });
+
 
     }
 
