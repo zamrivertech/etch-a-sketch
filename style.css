@@ -8,10 +8,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: darkolivegreen;
 }
 
 .container {
     width: 600px;
     height: 600px;
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    height: 42px;
+    width: 100%;
+    background-color: white;
 }
