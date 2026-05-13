@@ -23,4 +23,11 @@ body {
     height: 42px;
     width: 100%;
     background-color: white;
+    display: flex;
+}
+
+.box {
+    width: 42px;
+    height: 100%;
+    background-color: purple;
 }
