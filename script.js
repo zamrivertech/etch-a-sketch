@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 
-let squares = prompt('Number of squares?', 42);
+let squares = 64;// prompt('Number of squares?', 42);
 
 let drawable = false;
 
