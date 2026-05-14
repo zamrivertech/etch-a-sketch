@@ -1,6 +1,10 @@
 const container = document.querySelector('.container');
 
-let squares = 64;// prompt('Number of squares?', 42);
+const getSquares = document.querySelector('#squaresNum'); //64;// prompt('Number of squares?', 42);
+
+getSquares.addEventListener('click', () => {
+    
+let squares = prompt('Set number of squares?', 32);
 
 let drawable = false;
 
@@ -46,4 +50,4 @@ container.appendChild(row);
 
 }
 
-
+});
