@@ -37,3 +37,9 @@ body > * {
     background-color: white;
     border: solid .09px lightgrey;
 }
+
+#squaresNum {
+    padding: 8px;
+    border: 2px dashed purple;
+    color: purple;
+}
