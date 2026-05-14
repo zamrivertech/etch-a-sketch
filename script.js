@@ -6,6 +6,10 @@ getSquares.addEventListener('click', () => {
     
 let squares = prompt('Set number of squares?', 32);
 
+if (squares > 100) {
+    alert("Should be less or equal to 100!")
+} else {
+
 let drawable = false;
 
 for (let i = 0; i < squares; i++) {
@@ -47,6 +51,8 @@ container.appendChild(row);
 
     }
 
+
+}
 
 }
 
